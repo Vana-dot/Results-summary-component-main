@@ -4,11 +4,19 @@ body{
     margin:0px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
-
-.container{
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.container-elements{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height:100vh;
+    width: 40%;
+
+    margin-top:9rem;
+    
     gap: 30px;
 }
 .result{
@@ -16,6 +24,7 @@ body{
     text-align: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 50px;;
 
     padding-top: 1.5rem;
 
@@ -42,18 +51,18 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
 
 }
 
 .elements-summary div{
-   
-    text-align: center;
-     width: 160px;
-     background: #ff00ff;
+     display: flex;
+     justify-content: space-between;
+     width:40%;
      padding:1rem;
      border-radius:100px;
+     margin-bottom: 1rem;
 }
+
 
 /* 
 @media (min-width: 375px){
