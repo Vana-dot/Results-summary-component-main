@@ -1,5 +1,14 @@
 :root{
     --branco: #fff;
+    --vermelho: #ff0000;
+    --verde: #00BD91;
+    --amarelo: #FFB01F;
+
+
+    --bluepele: #EBF1FF;
+    --lavander: #C8C7FF;
+
+    --button: #303B5A;
     --roxo: #4E21CA;
     --azul: #1125D4;
 }
@@ -16,15 +25,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
  
 }
 .container-elements{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 40%;
+  
+    border-radius: 50px;
+    box-shadow: 20px 10px 30px var(--lavander);
 
     margin-top:9rem;
-    
     gap: 30px;
 }
 .result{
@@ -32,9 +44,8 @@ body{
     text-align: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 50px;;
-
     padding-top: 1.5rem; 
+    border-radius: 50px;
 
     color:var(--branco);
     background: linear-gradient(180deg, var(--roxo) 48%, var(--azul) 100%);
@@ -59,22 +70,74 @@ body{
     text-align: center;
 
 }
+.elements-summary ul{
+    padding: 0px;
+    margin: 0px;
+}
 .elements-summary li{
      list-style-type: none;
      padding: 1rem;
 
-     margin-bottom: 1rem;
+     margin:0.5rem 0.5rem 1rem  0.5rem;
      background: var(--roxo);
      border-radius: 15px;
 
 }
-/* 
-.elements-summary span:first-child{
-    align-items: center;
+li:nth-child(1) {
+    color: var(--vermelho);
+    background: var(--branco);
 }
- */
+li:nth-child(2) {
+    color:var(--amarelo);
+    background: var(--branco);
+}
+li:nth-child(3) {
+    color: var(--azul);
+    background: var(--bluepele);
+}
+li:nth-child(4) {
+    background: var(--lavander);
+}
+.elements-summary span{
+    font-size: 1.2rem;
+    
+    padding-right: 1.5rem ;
+}
+.elements-summary img{
+    width: 20px;
+}
 
-/* 
-@media (min-width: 375px){
+button{
+    color: var(--branco);
+    background: var(--button);
 
-} */
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 30px;
+    width: 100%;
+
+}
+button:hover{
+    background: linear-gradient(180deg, var(--roxo) 48%, var(--azul) 100%);
+}
+@media (min-width: 375px) and (max-width:755px){
+    .container-elements{
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
+    .result{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .summary h1{
+        padding:2rem 0rem 0rem 2rem;
+        margin:0px;
+    }
+    .elements-summary{
+        width: 100%;
+        margin: 1rem;
+    }
+
+}
