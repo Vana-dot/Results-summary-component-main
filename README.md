@@ -10,5 +10,4 @@
 
 ![Imagem do projeto](./assets/images/printTelaActive.png)
 
-
 **forward!** 🚀🚀🚀
