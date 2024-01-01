@@ -9,71 +9,67 @@
   <title>Frontend Mentor | Results summary component</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
- 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <div id="container">
-      <div class="container-elements">
-        <div class="result">
+    <main id="container">
+      <section class="container__elements">
           <h2>You Result</h2>
           <div class="progress">
               <div class="title">76</div>
               <span>of 100</span>
           </div>
           <h1>Great</h1>
-          <p class="quebrar"> You scored higher than 65% of<br> the people who have taken<br> these tests</p>
-        </div>
+          <p> You scored higher than 65% of the people who have taken these tests</p>
+      </section>
+      
 
         <section class="summary">
           <h1>Summary</h1>
-          <div class="elements">
+          <ul class="lista">
+            <li class="items__lista">
+              <span class="items">
+                <img src="./assets/images/icon-reaction.svg" alt=""> 
+                <span>Reaction</span>
+              </span>
+              <span class="progresso"> <strong class="progresso__concluido">80</strong> / 100</span>
 
-            <div class="elements-summary"> 
-              <ul>
-                <li>
-                  <span>
-                    <img src="./assets/images/icon-reaction.svg" alt=""> 
-                    <span> Reaction</span>
-                  </span>
-                  <span>80/100</span>
+            </li>
 
-                </li>
+            <li class="items__lista">
+              <span class="items">
+                <img src="./assets/images/icon-memory.svg" alt=""> 
+                <span> Memory</span>
+              </span>
+              <span class="progresso"> <strong class="progresso__concluido">92</strong> / 100</span>
+            </li>
 
-                <li>
-                  <span>
-                    <img src="./assets/images/icon-memory.svg" alt=""> 
-                    <span> Memory</span>
+            <li class="items__lista">
+                <span class="items">
+                  <img src="./assets/images/icon-verbal.svg" alt=""> 
+                  <span>Verbal</span>
+                </span>
+                <span class="progresso"> <strong class="progresso__concluido">61</strong> / 100</span>
+            </li>
 
-                  </span>
-                  <span>23/100</span>
-                </li>
+            <li class="items__lista">
+              <span class="items">
+                <img src="./assets/images/icon-visual.svg" alt=""> 
+                <span> Visual</span>
+              </span>
+              <span class="progresso"> <strong class="progresso__concluido">72</strong> / 100</span>
 
-                <li>
-                    <span>
-                      <img src="./assets/images/icon-verbal.svg" alt=""> 
-                      <span>Verbal</span>
-                    </span>
-                    <span>80/100</span>
+            </li>
+          </ul>
 
-                </li>
-                <li>
-                  <span>
-                    <img src="./assets/images/icon-visual.svg" alt=""> 
-                    <span> Visual</span>
-                  </span>
-                <span>80/100</span>
-                </li>
-              </ul>
             <button type="submit">Continue</button>
-          </div>
 
         </section>
 
-
-      </div>
-    </div>
+      </main>
+      <script src="script.js"></script>
 
 </body>
 </html>

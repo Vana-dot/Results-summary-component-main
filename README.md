@@ -6,12 +6,9 @@
 
 ### Versão desktop
 
-![Imagem do projeto](./assets/images/desktopp.png)
+![Imagem do projeto](./assets/images/printTela.png)
 
-![Imagem do projeto](./assets/images/active.png)
+![Imagem do projeto](./assets/images/printTelaActive.png)
 
-### Versão mobile
-
-![Imagem do projeto](./assets/images/mobile.png)
 
 **forward!** 🚀🚀🚀
